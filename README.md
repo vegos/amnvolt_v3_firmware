@@ -38,7 +38,7 @@ esptool.py --chip esp32s3 --baud 921600 write_flash 0x000000 "Mini ATS V3 - orig
 
 or with other tools...
 
-## Information About flashing
+## 🔗 Information About flashing
 
 Take a look at this link:
 https://esp32-si4732.github.io/ats-mini/flash.html
@@ -58,3 +58,37 @@ We plan to:
 
 This repository serves archival and educational purposes only.  
 Firmware belongs to its respective OEM or vendor.
+---
+
+## 🔗 Related Firmware Project
+
+The factory firmware (v1.01) appears to be based on or derived from [G8PTN's ATS_MINI project](https://github.com/G8PTN/ATS_MINI), which provides a minimal implementation of the ATS receiver using ESP32-S3 and the SI4732.
+
+> 📌 G8PTN confirms that some units with the Hi-Z front-end exhibit **battery drain even when powered off**, due to a design issue where the power to the JFET buffer is not properly switched.  
+> See: [this discussion with annotated image](https://github.com/G8PTN/ATS_MINI/discussions/106) for more details.
+
+This hardware modification involves cutting a factory trace and rerouting it through a switch-controlled line to avoid leaving the front-end MOSFET permanently powered.
+
+---
+---
+
+## ⚠️ Known Hardware Issue: Battery Drain on V3 Units
+
+Several users have confirmed that **AMNVOLT Mini V3** units with the **Hi-Z input circuit** and headphone amplifier may experience significant **battery drain**, even when turned off.
+
+### 🧠 Cause
+The issue is related to a design flaw where a power trace feeds voltage directly to the **JFET buffer** or associated front-end circuitry without being properly switched off. This keeps a transistor partially powered at all times.
+
+### 🔧 Community Workaround
+To fix this, users have applied a **hardware modification** by:
+
+- Scraping a specific via and soldering a **0-ohm resistor** to bypass or reroute the trace to a switched voltage point.
+- Avoiding the method of lifting transistor legs, which may harm RF performance or bypass critical filtering.
+
+### 📎 References
+- 📷 [Community discussion and visual mod example (Facebook group)](https://www.facebook.com/groups/629443686140117/permalink/723494063401745)
+- 🛠️ [G8PTN analysis and trace reroute suggestion](https://github.com/G8PTN/ATS_MINI/issues/37#issuecomment-2934519034)
+
+> This issue does **not affect earlier V2 units**, which seem to have proper power gating for the front-end.
+
+---
