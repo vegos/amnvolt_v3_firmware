@@ -6,7 +6,7 @@ This repository contains a full backup of the original factory firmware preinsta
 
 - **Filename:** `Mini ATS V3 - original-flash-1.01.bin`
 - **Size:** 4 MB
-- **Format:** Raw flash dump (using `esptool.py`)
+- **Format:** Raw flash dump
 - **Dumped with:**
   ```bash
   uvx --from esptool esptool.py --chip esp32s3 --port COM5 --baud 921600 read_flash 0x0 ALL "Mini ATS V3 - original-flash-1.01.bin"
