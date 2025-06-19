@@ -13,7 +13,7 @@ This repository contains a full backup of the original factory firmware preinsta
   ```
 
 
-> ⚠️ The firmware version does **not show any "About" screen or version string**, but it is believed to be version `1.01`, as bundled with models shipped after May 2025.
+> ⚠️ The firmware version does **not show any "About" screen**, but it is  version `1.01`.
 
 ## 📻 Device Overview
 
@@ -35,6 +35,8 @@ This firmware can be flashed back to a compatible V3 unit using:
 ```bash
 esptool.py --chip esp32s3 --baud 921600 write_flash 0x000000 "Mini ATS V3 - original-flash-1.01.bin"
 ```
+
+or with other tools...
 
 ## 📂 Roadmap
 
