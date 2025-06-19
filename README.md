@@ -38,6 +38,13 @@ esptool.py --chip esp32s3 --baud 921600 write_flash 0x000000 "Mini ATS V3 - orig
 
 or with other tools...
 
+## Information About flashing
+
+Take a look at this link:
+https://esp32-si4732.github.io/ats-mini/flash.html
+It's very well documented the flashing or backing up procedure!
+
+
 ## 📂 Roadmap
 
 We plan to:
