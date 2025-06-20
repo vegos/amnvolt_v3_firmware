@@ -92,3 +92,18 @@ To fix this, users have applied a **hardware modification** by:
 > This issue does **not affect earlier V2 units**, which seem to have proper power gating for the front-end.
 
 ---
+
+
+## 🔋 Experimental Verification (V2 vs V3 battery drain)
+
+After fully charging at the same time and leaving both units powered off for 24 hours:
+
+| Device | Voltage after 24h OFF | Notes |
+|--------|-----------------------|-------|
+| V2     | 4.21 V                | No drain observed — battery remains full |
+| V3     | 3.99 V                | Battery drain confirmed — ~0.2 V drop overnight |
+
+This confirms that the V3 unit suffers from a measurable standby drain even when powered off, consistent with the known issue described above.  
+A hardware modification is advised if long-term standby retention is important.
+
+I'm working on a proper design without cutting traces, by removing parts and reconnect them correctly.
