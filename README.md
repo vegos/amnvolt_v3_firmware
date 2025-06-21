@@ -107,3 +107,24 @@ This confirms that the V3 unit suffers from a measurable standby drain even when
 A hardware modification is advised if long-term standby retention is important.
 
 I'm working on a proper design without cutting traces, by removing parts and reconnect them correctly.
+
+## 🛠️ My Hardware Mod to Prevent Battery Drain
+
+A hardware modification was performed to disconnect the drain pin of the transistor from the PCB (lift the drain pin of the transistor), insulate it using kapton tape and rewire it so it receives power only when the device is switched on.
+
+Procedure
+
+Identified the transistor responsible for drain (K51G) and verified continuity with the battery + terminal. 
+Tried desoldering the component without hot air due to 3D printed enclosure constraints.
+Lifted the drain pin enough to fit insulation under it (kapton tape).
+Soldered a jumper wire from the drain pin to a nearby VCC pad that is active only when the power switch is on. That's the power switch.
+Verified the modification by checking that no current is drawn when the device is turned off.
+Confirmed the device still works fully — including receiving FT8 signals — after the modification.
+
+Notes
+
+RF performance remains unaffected.
+This method was chosen over PCB trace cutting due to being less invasive and more easily reversible. It doesn't need to cut any traces etc.
+Similar mods have been performed by other users, and documented online.
+
+📷 Photos from before, during, and after the mod are available and a dedicated subfolder with detailed documentatio.
