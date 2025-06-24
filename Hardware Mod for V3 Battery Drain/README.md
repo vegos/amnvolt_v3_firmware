@@ -75,6 +75,22 @@ Photos of each step were taken and are available in this folder.
 
 ---
 
+🔄 Update: Post-Mod Battery Drain Test (20h)
+
+After charging the modified V3 device with a verified, known-good charger (same used with the V2), the battery voltage reached 4.17V according to the device’s internal display.
+
+    20 hours later, the battery read 4.16V, indicating a very minimal drop of 0.01V.
+
+    This suggests that the mod is effective in eliminating the primary source of passive drain (i.e. Hi-Z buffer powered from VBAT).
+
+    Measurements were based on the device’s internal ADC; external multimeter readings may follow later for confirmation.
+
+This is a significant improvement compared to pre-mod behavior, where voltage dropped by ~0.1V in 30 hours.
+
+More measurements and validation (e.g., directly across the battery terminals) are planned.
+
+---
+
 ## 🔁 Reversibility & Notes
 
 - The mod does **not damage the PCB** or remove any parts.
@@ -86,3 +102,4 @@ This modification is a clean, effective way to correct a flaw in the AMNVOLT Min
 ---
 
 Additional photos, diagrams, and trace mapping may be added to this folder in future updates.
+
