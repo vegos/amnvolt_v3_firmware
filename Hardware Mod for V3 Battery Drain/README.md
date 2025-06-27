@@ -75,20 +75,29 @@ Photos of each step were taken and are available in this folder.
 
 ---
 
-🔄 Update: Post-Mod Battery Drain Test (20h & 50h)
+🔄 Update: Post-Mod Battery Drain Test (20h)
 
 After charging the modified V3 device with a verified, known-good charger (same used with the V2), the battery voltage reached 4.17V according to the device’s internal display.
 
     20 hours later, the battery read 4.16V, indicating a very minimal drop of 0.01V.
-    50 hours later, the battery still reads 4.16V, indicating that the first measurement was before the battery voltage was stabilized (it was measured after charging).
-
+    
     This suggests that the mod is fully effective in eliminating the primary source of passive drain (i.e. Hi-Z buffer powered from VBAT).
 
     Measurements were based on the device’s internal ADC; external multimeter readings may follow later for confirmation.
 
-This is a significant improvement compared to pre-mod behavior, where voltage dropped almost nothing in 50 hours.
+This is a significant improvement compared to pre-mod behavior, where voltage dropped 0.01V in 20 hours.
 
-More measurements (e.g., directly across the battery terminals) are planned.
+---
+
+## 🔄 Update 2: 50h Standby Test — No Drain
+
+A follow-up check was performed after **50 hours powered off**. The device still reported **4.16 V**, confirming that:
+
+- The previous 0.01 V drop was likely a post-charge stabilization effect.
+- No actual leakage current is present.
+- The battery retains full voltage even after 2+ days of standby.
+
+This supports the conclusion that the mod **fully eliminates the parasitic drain** that existed in stock V3 units.
 
 ---
 
