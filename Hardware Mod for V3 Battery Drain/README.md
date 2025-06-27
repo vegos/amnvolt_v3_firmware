@@ -75,7 +75,7 @@ Photos of each step were taken and are available in this folder.
 
 ---
 
-🔄 Update: Post-Mod Battery Drain Test (20h)
+## 🔄 Update: Post-Mod Battery Drain Test (20h)
 
 After charging the modified V3 device with a verified, known-good charger (same used with the V2), the battery voltage reached 4.17V according to the device’s internal display.
 
