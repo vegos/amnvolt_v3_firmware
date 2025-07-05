@@ -117,9 +117,9 @@ Procedure
 Identified the transistor responsible for drain (K51G) and verified continuity with the battery + terminal. 
 Tried desoldering the component without hot air due to 3D printed enclosure constraints.
 Lifted the drain pin enough to fit insulation under it (kapton tape).
-Soldered a jumper wire from the drain pin to a nearby VCC pad that is active only when the power switch is on. That's the power switch.
+Soldered a jumper wire from the drain pin to a nearby VCC pad that is active only when the power switch is on. So I get power (VCC) from the switch itself.
 Verified the modification by checking that no current is drawn when the device is turned off.
-Confirmed the device still works fully — including receiving FT8 signals — after the modification.
+Confirmed the device still works fully - receiving signals - after the modification.
 
 More information here: https://github.com/vegos/amnvolt_v3_firmware/tree/main/Hardware%20Mod%20for%20V3%20Battery%20Drain
 
