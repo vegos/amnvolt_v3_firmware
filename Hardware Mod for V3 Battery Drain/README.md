@@ -1,12 +1,14 @@
-# Detailed Documentation: AMNVOLT Mini SI4732 V3 Battery Drain Hardware Mod
+# Detailed Documentation: AMNVOLT Mini SI4732 V3 Battery Drain Hardware Mod and Noise on FET Mod
 
-This document presents a detailed analysis, rationale, and procedure for a hardware modification to the AMNVOLT Mini SI4732 V3 receiver. The goal is to eliminate unwanted battery drain observed while the device is powered off, which stems from a design issue in the Hi-Z antenna input buffer.
+This document presents a detailed analysis, rationale, and procedure for a hardware modification to the AMNVOLT Mini SI4732 V3 receiver. The goal is to eliminate unwanted battery drain observed while the device is powered off, which stems from a design issue in the Hi-Z antenna input buffer. Also (see update #3) after the mod (Update 1 & 2) noise problem detected and fixed.
+
+Please note that everything written here are for the Amnvolt V3. The V3S has all these fixed.
 
 ---
 
 ## 🧠 Background & Root Cause
 
-The V3 version of the AMNVOLT Mini introduces a Hi-Z front-end input circuit intended to improve reception with active antennas. However, this feature introduces a flaw: the Hi-Z buffer stage receives power directly from the battery (VBAT), and **remains powered even when the main power switch is off**.
+The V3 version of the AMNVOLT Mini ATS introduces a Hi-Z front-end input circuit intended to improve reception with active antennas. However, this feature introduces a flaw: the Hi-Z buffer stage receives power directly from the battery (VBAT), and **remains powered even when the main power switch is off**.
 
 At the heart of this problem lies a transistor (labeled `K51G`) which switches or buffers power for the Hi-Z stage. Its **drain pin is connected directly to VBAT** (bottom right pin when looking the PCB with the SMA connector up/right), meaning the transistor (and by extension, the buffer circuit) continuously draws current, discharging the battery even when the device is powered off by the hardware switch.
 
@@ -75,7 +77,7 @@ Photos of each step were taken and are available in this folder.
 
 ---
 
-## 🔄 Update: Post-Mod Battery Drain Test (20h)
+## 🔄 Update `: Post-Mod Battery Drain Test (20h)
 
 After charging the modified V3 device with a verified, known-good charger (same used with the V2), the battery voltage reached 4.17V according to the device’s internal display.
 
@@ -113,3 +115,32 @@ This modification is a clean, effective way to correct a flaw in the AMNVOLT Min
 
 Additional photos, diagrams, and trace mapping may be added to this folder in future updates.
 
+## 🔁 Update 3: Noise-Informed Refinement — Supply From SI4732 Pin 10
+
+After the successful battery drain fix (see previous mod), the K51G transistor responsible for powering the Hi-Z buffer was being supplied directly from the battery-side switch, using a clean path without cutting PCB traces.
+
+However, Peter Neufeld finds that there are many birdies and spurious signals comming from not clean power line. They are all well documented on his blog: https://peterneufeld.wordpress.com/2025/06/13/si4732a-minirx-modifications
+
+During follow-up testing with an oscilloscope (Siglent SDS1202X-E), small but noticeable ripple and noise were observed on the supply rail — even when drawing power directly from the battery. The FFT revealed energy peaks around 250 kHz, likely due to the boost converter’s switching noise or internal interference, still present even when I turned off (via software/long press on the knob) of the display.
+
+## 🛠️ Mod Update
+
+To address this, the supply line to the Hi-Z buffer’s FET (K51G) was moved from the battery switch to Pin 10 of the SI4732, which provides a regulated and clean 3.3 V rail (Vcc_Radio).
+This pin is active only when the radio is ON (so no battery drain).
+
+It is near the buffer and free from switching noise.
+The rerouting was easy: simply de-solder the wire from the previous supply line and reattach it to SI4732 pin 10 — no board trace cutting required. So, the previous mod was a useful one, no cuts of traces were needed. 
+
+## 🔬 Verified with Oscilloscope
+
+Measurements before and after the change showed:
+Ripple at ~250 kHz was clearly visible before.
+After rerouting to Pin 10, the rail was flat and noise-free.
+
+When the radio was OFF, 0 V confirmed isolation and no drain.
+
+FFT showed no more harmonics or interference peaks in the 0–500 kHz range.
+
+## ✅ Result
+
+The Hi-Z buffer is now powered cleanly and only when the radio is ON.The overall noise floor is improved, reception is slightly cleaner, and the mod remains fully reversible and minimal.
