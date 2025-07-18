@@ -90,6 +90,8 @@ Based on both controlled audio measurements and real-world FT8 signal reception:
 
 - **V2 exhibits greater dynamic response to weak and strong FT8 signals**, suggesting higher front-end sensitivity and wider effective SNR range.
 -- **V3 provides a more stable output**, but with **limited SNR variation**, possibly due to stricter AGC or internal processing smoothing.
+-- **V2 consistently achieved higher peak SNR** values and deeper minimums, implying a more responsive and sensitive front-end.
+-- **V3 had a more compressed SNR range**, possibly prioritizing stability over sensitivity.
 - In real RF conditions, V2 achieved **consistently higher SNR readings** and **better FT8 decoding success**.
 - These results suggest that **V2 has better real-world dynamic range and sensitivity**, despite its simpler or older hardware revision.
 
