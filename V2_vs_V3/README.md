@@ -95,4 +95,4 @@ Based on both controlled audio measurements and real-world FT8 signal reception:
 
 In contrast, **V3 has a slightly higher noise floor and more distortion**, which may impact weak signal performance under certain conditions.
 
-### Overall, V2 outperforms V3 both in laboratory noise tests and actual RF decoding scenarios.
+### Overall, V2 outperforms V3 both in laboratory noise tests and actual RF decoding scenarios but it suffers from hum noise (50Hz).
