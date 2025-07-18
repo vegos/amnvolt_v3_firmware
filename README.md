@@ -133,3 +133,11 @@ This method was chosen over PCB trace cutting due to being less invasive and mor
 Similar mods have been performed by other users, and documented online.
 
 📷 Photos from before, during, and after the mod are available and a dedicated subfolder with detailed documentatio.
+
+---
+
+## 📊 Mini ATS V2 vs V3 (AMNVOLT) – Audio and SNR Evaluation
+
+A detailed comparison between the Mini ATS V2 and V3 (AMNVOLT) receivers, focusing on audio noise levels, dynamic range, and FT8 decoding performance. Includes lab tests with signal generator, spectrum analysis, and real-world SNR tracking over time.
+
+➡️ <a href="https://github.com/vegos/amnvolt_v3_firmware/blob/main/V2_vs_V3/README.md">Read the full evaluation</a>.
