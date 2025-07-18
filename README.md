@@ -3,9 +3,9 @@
 This repository contains a full backup of the original factory firmware preinstalled on the **AMNVOLT Mini SI4732 V3** pocket DSP radio, based on the **ESP32-S3** microcontroller and **SI4732** DSP chip.
 
 
-There are some mods for the V3 version. You can find them here: https://github.com/vegos/amnvolt_v3_firmware/tree/main/Hardware%20Mod%20for%20V3%20Battery%20Drain
+There are some mods for the V3 version. You can find them <a href="https://github.com/vegos/amnvolt_v3_firmware/tree/main/Hardware%20Mod%20for%20V3%20Battery%20Drain">here</a>.
 
-Also an SNR/Audio evaluation here: https://github.com/vegos/amnvolt_v3_firmware/blob/main/V2_vs_V3/README.md
+Also an SNR/Audio evaluation <a href="https://github.com/vegos/amnvolt_v3_firmware/blob/main/V2_vs_V3/README.md">here</a>.
 
 
 ## 📦 Firmware File
