@@ -24,10 +24,10 @@ V3 appears to have a higher RMS noise level at the output. However, examining th
 
 ### Frequency Spectra
 
-- **[V2 Noise Spectrum](v2.png)**  
-- **[V3 Noise Spectrum](v3.png)**  
-- **[V2 Tone Spectrum](V2_Tone.png)**  
-- **[V3 Tone Spectrum](V3_Tone.png)**
+![V2 Noise spectrum](./v2.png)
+![V3 Noise spectrum](./v3.png)
+![V2 Tone spectrum](./V2_Tone.png)
+![V3 Tone spectrum](./V3_Tone.png)
 
 From the tone spectra, we observe that the V3 output has less low-frequency ripple and better harmonic suppression around 440Hz.
 
