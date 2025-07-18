@@ -96,3 +96,22 @@ Based on both controlled audio measurements and real-world FT8 signal reception:
 In contrast, **V3 has a slightly higher noise floor and more distortion**, which may impact weak signal performance under certain conditions.
 
 ### Overall, V2 outperforms V3 both in laboratory noise tests and actual RF decoding scenarios but it suffers from hum noise (50Hz).
+
+
+---
+
+## Mini ATS V2/V3 PCBs
+
+The tests performed on these two Mini ATS radios (V2 & AMNVOLT V2), using the <a href="https://github.com/esp32-si4732/ats-mini/releases/tag/v2.28">ATS Mini v2.28 firmware</a> version.
+
+<p align="center">
+  <img src="./v2_pcb.jpeg" width="800" alt="Mini ATS V2 PCB"/>
+  <br>
+  <em>Mini ATS V2 PCB / Note: This version has the headphone amp on the other side (under the screen) for noise reduction.</em>
+</p>
+
+<p align="center">
+  <img src="./v3_pcb.jpeg" width="800" alt="AMNVOLT Mini ATS V3 PCB"/>
+  <br>
+  <em>Mini ATS V3 PCB (AMNVOLT).</em>
+</p>
