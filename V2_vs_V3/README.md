@@ -88,12 +88,10 @@ The difference in SNR suggests that V2 has a better dynamic range and overall su
 
 Based on both controlled audio measurements and real-world FT8 signal reception:
 
-- **V2 exhibits a lower output noise level** compared to V3, as shown by RMS and frequency analysis in Audacity.
-- It also delivers a **cleaner audio signal** with fewer harmonics and lower noise floor in the entire spectrum.
+- **V2 exhibits greater dynamic response to weak and strong FT8 signals**, suggesting higher front-end sensitivity and wider effective SNR range.
+-- **V3 provides a more stable output**, but with **limited SNR variation**, possibly due to stricter AGC or internal processing smoothing.
 - In real RF conditions, V2 achieved **consistently higher SNR readings** and **better FT8 decoding success**.
 - These results suggest that **V2 has better real-world dynamic range and sensitivity**, despite its simpler or older hardware revision.
-
-In contrast, **V3 has a slightly higher noise floor and more distortion**, which may impact weak signal performance under certain conditions.
 
 ### Overall, V2 outperforms V3 both in laboratory noise tests and actual RF decoding scenarios but it suffers from hum noise (50Hz).
 
