@@ -4,7 +4,9 @@ This repository contains a full backup of the original factory firmware preinsta
 
 
 There are some mods for the V3 version. You can find them here: https://github.com/vegos/amnvolt_v3_firmware/tree/main/Hardware%20Mod%20for%20V3%20Battery%20Drain
+
 Also an SNR/Audio evaluation here: https://github.com/vegos/amnvolt_v3_firmware/blob/main/V2_vs_V3/README.md
+
 
 ## 📦 Firmware File
 
@@ -19,6 +21,7 @@ Also an SNR/Audio evaluation here: https://github.com/vegos/amnvolt_v3_firmware/
 
 > ⚠️ The firmware version does **not show any "About" screen**, but it is  version `1.01`.
 
+
 ## 📻 Device Overview
 
 | Feature               | Value                             |
@@ -32,6 +35,7 @@ Also an SNR/Audio evaluation here: https://github.com/vegos/amnvolt_v3_firmware/
 | Supported Modes       | AM / FM / SSB (LSB & USB)         |
 | Firmware Upgradable   | Yes (via UART and `esptool.py`)   |
 
+
 ## 🔧 Usage
 
 This firmware can be flashed back to a compatible V3 unit using:
@@ -41,6 +45,7 @@ esptool.py --chip esp32s3 --baud 921600 write_flash 0x000000 "Mini ATS V3 - orig
 ```
 
 or with other tools...
+
 
 ## 🔗 Information About flashing
 
@@ -57,6 +62,7 @@ We plan to:
 - [ ] Extract SPIFFS or other resource sections (if available)
 - [ ] Provide unpacked firmware components (e.g. `firmware.bin`, `spiffs.img`)
 - [ ] Document firmware capabilities and limitations vs open source builds (e.g. [`ats-mini2`](https://github.com/jumbo5566/ats-mini2))
+
 
 ## 📜 License
 
@@ -80,14 +86,17 @@ This hardware modification involves cutting a factory trace and rerouting it thr
 
 Several users have confirmed that **AMNVOLT Mini V3** units with the **Hi-Z input circuit** and headphone amplifier may experience significant **battery drain**, even when turned off.
 
+
 ### 🧠 Cause
 The issue is related to a design flaw where a power trace feeds voltage directly to the **JFET buffer** or associated front-end circuitry without being properly switched off. This keeps a transistor partially powered at all times.
+
 
 ### 🔧 Community Workaround
 To fix this, users have applied a **hardware modification** by:
 
 - Scraping a specific via and soldering a **0-ohm resistor** to bypass or reroute the trace to a switched voltage point.
 - Avoiding the method of lifting transistor legs, which may harm RF performance or bypass critical filtering.
+
 
 ### 📎 References
 - 📷 [Community discussion and visual mod example (Facebook group)](https://www.facebook.com/groups/629443686140117/permalink/723494063401745)
@@ -111,6 +120,7 @@ This confirms that the V3 unit suffers from a measurable standby drain even when
 A hardware modification is advised if long-term standby retention is important.
 
 I'm working on a proper design without cutting traces, by removing parts and reconnect them correctly.
+
 
 ## 🛠️ My Hardware Mod to Prevent Battery Drain
 
