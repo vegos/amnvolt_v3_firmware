@@ -24,10 +24,29 @@ V3 appears to have a higher RMS noise level at the output. However, examining th
 
 ### Frequency Spectra
 
-![V2 Noise spectrum](./v2.png)
-![V3 Noise spectrum](./v3.png)
-![V2 Tone spectrum](./V2_Tone.png)
-![V3 Tone spectrum](./V3_Tone.png)
+<p align="center">
+  <img src="./v2.png" width="600" alt="V2 Noise Spectrum"/>
+  <br>
+  <em>Figure 1: Noise Spectrum of V2</em>
+</p>
+
+<p align="center">
+  <img src="./v3.png" width="600" alt="V3 Noise Spectrum"/>
+  <br>
+  <em>Figure 2: Noise Spectrum of V3</em>
+</p>
+
+<p align="center">
+  <img src="./V2_Tone.png" width="600" alt="V2 Audio Spectrum"/>
+  <br>
+  <em>Figure 3: Spectrum of V2 at 440Hz</em>
+</p>
+
+<p align="center">
+  <img src="./V3_Tone.png" width="600" alt="V3 Audio Spectrum"/>
+  <br>
+  <em>Figure 4: Spectrum of V3 at 440Hz</em>
+</p>
 
 From the tone spectra, we observe that the V3 output has less low-frequency ripple and better harmonic suppression around 440Hz.
 
@@ -46,7 +65,11 @@ This illustrates clearly that the output of V3 has slightly more background nois
 
 A practical comparison was conducted by decoding FT8 signals over time from both receivers.
 
-**[SNR Graph – V2 vs V3](FT8_Signals_Decoding_with_V2_and_V3.png)**
+<p align="center">
+  <img src="./FT8_Signals_Decoding_with_V2_and_V3.png" width="600" alt="FT8 Signals Decoding with V2 & V3"/>
+  <br>
+  <em>SNR Graph - V2 vs V3</em>
+</p>
 
 - **Red plot**: V3 (before 15:30)  
 - **Blue plot**: V2 (after 15:30)
