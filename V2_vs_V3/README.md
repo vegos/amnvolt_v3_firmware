@@ -66,7 +66,7 @@ This illustrates clearly that the output of V3 has slightly more background nois
 A practical comparison was conducted by decoding FT8 signals over time from both receivers.
 
 <p align="center">
-  <img src="./FT8_Signals_Decoding_with_V2_and_V3.png" width="600" alt="FT8 Signals Decoding with V2 & V3"/>
+  <img src="./FT8_Signals_Decoding_with_V2_and_V3.png" width="800" alt="FT8 Signals Decoding with V2 & V3"/>
   <br>
   <em>SNR Graph - V2 vs V3</em>
 </p>
