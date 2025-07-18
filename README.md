@@ -1,6 +1,7 @@
 # AMNVOLT Mini ATS V3 – Original Firmware Backup
 
 This repository contains a full backup of the original factory firmware preinstalled on the **AMNVOLT Mini SI4732 V3** pocket DSP radio, based on the **ESP32-S3** microcontroller and **SI4732** DSP chip.
+Also included some details about some mods on the V3 version. You can find them here: https://github.com/vegos/amnvolt_v3_firmware/tree/main/Hardware%20Mod%20for%20V3%20Battery%20Drain
 
 ## 📦 Firmware File
 
