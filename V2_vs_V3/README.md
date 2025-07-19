@@ -3,7 +3,7 @@
 
 ## Test Setup
 
-A signal generator (OWON DGE1060) was used to transmit a 440Hz tone at 15000KHz to both Mini ATS receivers (V2 and V3). The output from each receiver was connected to a sound card, and the input gain was carefully adjusted so that both signals matched in amplitude.
+A signal generator (OWON DGE1060) was used to transmit a 440Hz tone at 15000KHz to both Mini ATS receivers (V2 and V3). The output from each receiver was connected to a sound card (Steinberg UR22C), and the input gain was carefully adjusted so that both signals matched in amplitude.
 
 After that, I recorded two sets of audio from each receiver:
 1. **Noise Floor** – with no antenna connected at 15000KHz.
@@ -55,7 +55,11 @@ From the tone spectra, we observe that the V3 output has less low-frequency ripp
 ## Audio Waveforms
 
 See the combined waveform view:  
-**[Audio Overview](Audio Details.png)**
+
+<p align="center">
+  <img src="./Audio_Details.png" width="600" alt="Audio Details"/>
+</p>
+
 
 This illustrates clearly that the output of V3 has slightly more background noise but a better-defined tone with less visible distortion.
 
