@@ -57,7 +57,7 @@ From the tone spectra, we observe that the V3 output has less low-frequency ripp
 See the combined waveform view:  
 
 <p align="center">
-  <img src="./Audio_Details.png" width="600" alt="Audio Details"/>
+  <img src="./Audio_Details.png" width="800" alt="Audio Details"/>
 </p>
 
 
