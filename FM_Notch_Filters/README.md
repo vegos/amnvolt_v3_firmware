@@ -15,8 +15,8 @@
 
 | Setup | Screenshot | Notes |
 |-------|------------|-------|
-| No Filter | ![](images/11. Airband No Filter.pngg) | Clean signal, but FM bleed is possible |
-| Good Filter | ![](images/9. Airband Good filter.png) | Slightly better noise floor, less FM garbage |
+| No Filter | <img src="./images/11. Airband No Filter.png" width="500"> | Clean signal, but FM bleed is possible |
+| Good Filter |  <img src="./images/9. Airband Good filter.png" width="500"> | Slightly better noise floor, less FM garbage |
 
 ---
 
@@ -24,9 +24,9 @@
 
 | Setup | Screenshot | Notes |
 |-------|------------|-------|
-| No Filter | ![](images/2. No filter.png) | Strong FT8 signals, FM overload potential |
-| Good Filter | ![](images/1. filter_good.png) | Better dynamic range, cleaner background |
-| Bad Filter | ![](images/3. filter_bad.png) | |
+| No Filter |  <img src="./images/2. No filter.png" width="500"> | Strong FT8 signals, FM overload potential |
+| Good Filter |  <img src="./images/1. filter_good.png" width="500"> | Better dynamic range, cleaner background |
+| Bad Filter |  <img src="./images/3. filter_bad.png" width="500"> | |
 
 > Direct sampling (Q-branch) on RTL-SDR v3
 
@@ -37,11 +37,11 @@
 | Setup | Screenshot | Notes |
 |-------|------------|-------|
 | No Filter | | Loud local FM |
-| Bad Filter | ![](images/4. fm - filter_bad_nogain.png) | FM slightly attenuated, still audible @ 0dB Gain |
-| Bad Filter | ![](images/5. fm - filter_bad.png) | 25.4dB (Optimal setting) |
-| Good Filter | ![](images/8. fm - filter_good no gain.png) | No Gain |
-| Good Filter | ![](images/6. fm - filter_good.png) | FM nearly gone, attenuated sharply (@ 25.4dB, as Bad Filter) |
-| Good Filter | ![](images/7. fm - filter_good full gain.png)) | @ Full Gain |
+| Bad Filter |  <img src="./images/4. fm - filter_bad_nogain.png" width="500"> | FM slightly attenuated, still audible @ 0dB Gain |
+| Bad Filter |  <img src="./images/5. fm - filter_bad.png" width="500"> | 25.4dB (Optimal setting) |
+| Good Filter | <img src="./images/8. fm - filter_good no gain.png" width="500"> | No Gain |
+| Good Filter |  <img src="./images/6. fm - filter_good.png" width="500"> | FM nearly gone, attenuated sharply (@ 25.4dB, as Bad Filter) |
+| Good Filter |  <img src="./images/7. fm - filter_good full gain.png" width="500"> | @ Full Gain |
 
 ---
 
