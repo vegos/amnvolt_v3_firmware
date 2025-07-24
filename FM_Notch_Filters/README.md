@@ -15,8 +15,8 @@
 
 | Setup | Screenshot | Notes |
 |-------|------------|-------|
-| No Filter | ![](img/airband_nofilter.png) | Clean signal, but FM bleed is possible |
-| Good Filter | ![](img/airband_goodfilter.png) | Slightly better noise floor, less FM garbage |
+| No Filter | ![](images/11. Airband No Filter.pngg) | Clean signal, but FM bleed is possible |
+| Good Filter | ![](images/9. Airband Good filter.png) | Slightly better noise floor, less FM garbage |
 
 ---
 
@@ -24,8 +24,9 @@
 
 | Setup | Screenshot | Notes |
 |-------|------------|-------|
-| No Filter | ![](img/hf_nofilter.png) | Strong FT8 signals, FM overload potential |
-| Good Filter | ![](img/hf_goodfilter.png) | Better dynamic range, cleaner background |
+| No Filter | ![](images/2. No filter.png) | Strong FT8 signals, FM overload potential |
+| Good Filter | ![](images/1. filter_good.png) | Better dynamic range, cleaner background |
+| Bad Filter | ![](images/3. filter_bad.png) | |
 
 > Direct sampling (Q-branch) on RTL-SDR v3
 
@@ -35,9 +36,12 @@
 
 | Setup | Screenshot | Notes |
 |-------|------------|-------|
-| No Filter | ![](img/fm_nofilter.png) | Loud local FM |
-| Bad Filter | ![](img/fm_badfilter.png) | FM slightly attenuated, still audible |
-| Good Filter | ![](img/fm_goodfilter.png) | FM nearly gone, attenuated sharply |
+| No Filter | | Loud local FM |
+| Bad Filter | ![](images/4. fm - filter_bad_nogain.png) | FM slightly attenuated, still audible @ 0dB Gain |
+| Bad Filter | ![](images/5. fm - filter_bad.png) | 25.4dB (Optimal setting) |
+| Good Filter | ![](images/8. fm - filter_good no gain.png) | No Gain |
+| Good Filter | ![](images/6. fm - filter_good.png) | FM nearly gone, attenuated sharply (@ 25.4dB, as Bad Filter) |
+| Good Filter | ![](images/7. fm - filter_good full gain.png)) | @ Full Gain |
 
 ---
 
