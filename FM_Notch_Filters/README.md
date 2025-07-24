@@ -89,12 +89,6 @@ Tested using NanoVNA Saver with calibrated patch cable. Only an SMA female-femal
   - [BADFILTER.s1p](BADFILTER.s1p)
   - [BADFILTER.s2p](BADFILTER.s2p)
 
-- Waterfall screenshots for:
-  - FM reception
-  - Airband AM
-  - HF (40m)
-  - NanoVNA sweeps (return/insertion loss)
-
 ---
 
 ## ✅ Conclusions
@@ -105,3 +99,19 @@ Tested using NanoVNA Saver with calibrated patch cable. Only an SMA female-femal
 - 📶 **FM suppression** directly impacts SDR dynamic range and weak-signal decoding
 
 > Use high-quality notch filters when operating near strong broadcast sources. Especially recommended with RTL-SDRs that lack hardware filtering.
+
+---
+
+## 📸 Real World Observations from SDR (Airspy SDR#)
+
+- HF – Shortwave Broadcast (15 MHz)
+  - <a href="./images/2. No filter.png">No filter</a>
+  - <a href="./images/1. filter_good.png">With the Good FM notch filter</a>
+  - <a href="./images/3. filter_bad.png">With the Bad FM notch filter</a>
+  
+- FM Broadcast Band (104 MHz)  
+  - <a href="./images/4. fm - filter_bad_nogain.png">Bad Filter – No Gain</a>
+  - <a href="./images/5. fm - filter_bad.png">Bad Filter – With gain (Optimal dB Setting)</a>
+  - <a href="./images/6. fm - filter_good.png">Good Filter – With Gain (Same as Bad Filter)</a>
+  - <a href="./images/7. fm - filter_good full gain.png">Good Filter – Full Gain</a>
+  - <a href="./images/8. fm - filter_good no gain.png">Good Filter – No Gain</a>
