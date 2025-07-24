@@ -79,6 +79,7 @@ Tested using NanoVNA Saver with calibrated patch cable. Only an SMA female-femal
 
 - **Receiver**: RTL-SDR v3
 - **Antenna**: Moonraker X1-HF (via 15–20m RG58)
+- **Hardware**: NanoVNA-H4 ZeenKo ZN401 V4.4 (Firmware (<a href="https://github.com/hugen79/NanoVNA-H/releases/tag/1.2.44">v.1.2.44</a>)
 - **Software**: SDR# Airspy Studio, NanoVNA Saver
 - **Filter Chain**: SDR → SMA f-f → filter → 10cm SMA patch → antenna
 - **Calibration**: VNA full 2-port with same patch cable
