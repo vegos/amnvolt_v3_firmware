@@ -151,8 +151,8 @@ The Hi-Z buffer is now powered cleanly and only when the radio is ON.The overall
 
 After completing the mod, voltage was measured on the **source pin** of the Hi-Z buffer transistor (K51G):
 
-- **Drain** (via jumper): 3.32 V
-- **Source**: 0.50–0.51 V
+- <a href="./16.%20FET%20Drain.jpg">**Drain**</a> (via jumper): 3.32 V
+- <a href="./17.%20FET%20Source.jpg">**Source**</a>: 0.50–0.51 V
 
 Notably, attaching or removing a loop antenna or Moonraker whip **did not affect the source voltage**, confirming that:
 
