@@ -144,3 +144,20 @@ FFT showed no more harmonics or interference peaks in the 0–500 kHz range.
 ## ✅ Result
 
 The Hi-Z buffer is now powered cleanly and only when the radio is ON.The overall noise floor is improved, reception is slightly cleaner, and the mod remains fully reversible and minimal.
+
+---
+
+### 🔬 Additional Verification: Source Pin Behavior
+
+After completing the mod, voltage was measured on the **source pin** of the Hi-Z buffer transistor (K51G):
+
+- **Drain** (via jumper): 3.32 V
+- **Source**: 0.50–0.51 V
+
+Notably, attaching or removing a loop antenna or Moonraker whip **did not affect the source voltage**, confirming that:
+
+- The Hi-Z buffer’s internal load dominates the DC path.
+- External antenna loading does **not significantly alter** the bias point.
+- The transistor behaves as expected under normal ON conditions, supplying current to the buffer section.
+
+This confirms the modification is stable regardless of antenna presence.
