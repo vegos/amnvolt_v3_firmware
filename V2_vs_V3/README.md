@@ -11,6 +11,8 @@ After that, I recorded two sets of audio from each receiver:
 
 To eliminate noticeable 50Hz hum on the V2, the signal generator’s ground had to be connected to the line-in ground of the sound card. The V3 didn’t exhibit any hum.
 
+**Note that** I’m not an RF or electronics expert — just a regular guy trying to understand the performance of two receivers in a real-world setup. My goal was not to perform a lab-grade scientific comparison, but a practical evaluation that reflects my actual use case.
+
 ---
 
 ## Audio Signal Comparison
