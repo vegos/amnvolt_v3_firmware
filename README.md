@@ -1,4 +1,9 @@
 # 📡 Mini ATS (SI4732)
+![ESP32-S3](https://img.shields.io/badge/MCU-ESP32--S3-blue)
+![SI4732](https://img.shields.io/badge/DSP-SI4732-lightgrey)
+![Mini ATS](https://img.shields.io/badge/Radio-Mini%20ATS-green)
+![Status: Active](https://img.shields.io/badge/status-active-success)
+![License: CC-BY](https://img.shields.io/badge/license-CC--BY-blue)
 
 > Central entry point for Mini ATS (SI4732) family radios (AMNVOLT V3, V2 and generic/compatibles).
 
