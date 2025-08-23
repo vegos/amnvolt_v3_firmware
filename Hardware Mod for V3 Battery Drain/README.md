@@ -57,10 +57,10 @@ Several modding options were considered:
 ### Mod Procedure
 
 1. **Locate the `K51G` transistor** near the Hi-Z circuit.
-2. **Heat and partially lift the drain pin** (typically lower-right pin). I didn't use hot gun air, as I was afraid of the 3d-printed enclosre. So, I took the more difficult way.
+2. **Desolder or try to remove the entire transistor so that the drain pin is lifted**. 
 3. **Isolate the pad** beneath it using a square of **Kapton tape**.
 4. **Confirm disconnection**: no more continuity between the pad and battery +.
-5. **Identify a point on the board** that only becomes powered when the power switch is ON. (There are many points that you can get + voltage. I took the easiest way, to connect it to the ON/OFF switch.)
+5. **Identify a point on the board** that only becomes powered when the power switch is ON. (There are many points that you can get + voltage. I took the easiest way, to connect it to the ON/OFF switch.) -- WARNING: Check Update #3.
 6. **Solder a thin jumper wire** from that ON-only source to the lifted drain pin.
 7. **Check continuity** and functionality: device must boot and receive normally.
 
