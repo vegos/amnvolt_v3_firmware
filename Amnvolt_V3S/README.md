@@ -113,7 +113,7 @@ repo-root/
 
 ## 📐 Measurements
 
-* **V3S power supply noise measurements** → [Power Supply Noise](./Amnvolt_V3S/Power_Supply_Noise/README.md)  
+* **V3S power supply noise measurements** → [Power Supply Noise](./Power_Supply_Noise/README.md)  
   Includes oscilloscope tests on the JFET Source (pin 2), SI4732 VDD_RF (pin10), and power switch output.  
   Covers both **DC bias voltages** and **AC ripple/noise analysis**, identifying the cleanest supply rail for the Hi-Z input stage.
 
