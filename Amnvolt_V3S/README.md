@@ -7,22 +7,43 @@ This page collects what’s observable from the unit in hand plus the manufactur
 
 ---
 
-## 📸 Gallery (./images)
+## 📸 Gallery
 
-- **Front (powered off)**  
+- **Front (powered off)**
+  
   ![Front view](./images/1.jpg)
-- **Back**  
+
+
+- **Back**
+  
   ![Back view](./images/2.jpg)
-- **MW/AM in operation**  
+
+
+- **MW/AM in operation**
+  
   ![AM screen](./images/3.jpg)
-- **FM in operation**  
+
+
+- **FM in operation**
+- 
   ![FM screen](./images/4.jpg)
-- **Main PCB (top, close‑up)**  
+
+
+- **Main PCB (top, close‑up)**
+ 
   ![PCB close](./images/5.jpg)
-- **PCB with Li‑Po & speaker**  
+
+
+- **PCB with Li‑Po & speaker**
+
   ![PCB + battery](./images/6.jpg)
-- **Front sub‑board with ESP32/SI4732 silkscreen**  
+
+
+- **Front sub‑board with ESP32/SI4732 silkscreen**
+  
   ![ESP32‑SI4732 sub‑board](./images/7.jpg)
+
+
 - **Battery & speaker detail**  
   ![Battery & speaker](./images/8.jpg)
 
@@ -31,7 +52,7 @@ This page collects what’s observable from the unit in hand plus the manufactur
 
 ## ⭐ Highlights
 - **June 2025 / upgraded version.**
-- **Built‑in Hi‑Z circuit** to improve weak‑signal handling on long‑wire/Hi‑Z antennas (The same circuit with V3, a simple JFET).
+- **Built‑in Hi‑Z circuit** to improve weak‑signal handling on long‑wire/Hi‑Z antennas (The same with V3, a very simple High-Z circuit with a JFET).
 - **Built‑in headphone amplifier** — noticeably louder in headphones than previous non‑amp versions (V1 actually, V2 and later has headphone amp).
 - **Injection‑molded ABS enclosure** (stronger and cleaner than prior 3D‑printed shells). That's a really good upgrade.
 - **JFET power circuit optimized** — no more “battery drain after shutdown” issue.
