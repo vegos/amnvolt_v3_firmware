@@ -15,6 +15,8 @@
 * **Battery drain hardware fix (V3)** → [`/Hardware Mod for V3 Battery Drain`](./Hardware%20Mod%20for%20V3%20Battery%20Drain/)
 * **V2 vs V3 comparison** → [`/V2_vs_V3`](./V2_vs_V3/)
 * **FM notch filter tests** → [`/FM_Notch_Filters`](./FM_Notch_Filters/)
+* **V3S overview (photos & specs)** → [Amnvolt V3S README](./Amnvolt_V3S/README.md)
+* **V3S power supply noise measurements** → [Power Supply Noise](./Amnvolt_V3S/Power_Supply_Noise/README.md)
 
 ---
 
