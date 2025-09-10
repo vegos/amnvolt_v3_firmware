@@ -73,8 +73,7 @@ repo-root/
    ├─ 6.jpg        # PCB + battery
    ├─ 7.jpg        # ESP32‑SI4732 sub‑board
    └─ 8.jpg        # battery & speaker detail
-
----
+```
 
 ## ⚠️ Notes & Tips
 - Use a **standard 5 V USB‑C charger** (no QC/PD fast‑charge).  
