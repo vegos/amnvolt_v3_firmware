@@ -17,6 +17,7 @@ This page collects what’s observable from the unit in hand plus the manufactur
 - **Back**
   
   ![Back view](./images/2.jpg)
+  *(I put this sticker on to tell this radio apart from the others)*
 
 
 - **MW/AM in operation**
