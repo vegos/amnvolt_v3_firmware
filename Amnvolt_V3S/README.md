@@ -5,6 +5,7 @@ This page collects what’s observable from the unit in hand plus the manufactur
 
 > TL;DR: Latest (Jun‑2025) AMNVOLT Mini with **injection‑molded ABS shell**, **built‑in Hi‑Z** input network, **headphone amplifier**, and an optimized power circuit that **fixes the battery drain issue when powered-off**.
 
+
 ---
 
 ## 📸 Gallery
@@ -61,11 +62,13 @@ This page collects what’s observable from the unit in hand plus the manufactur
 - **800 mAh Li‑Po battery**; manufacturer quotes **10+ hours** typical listening.
 - **Firmware upgradable** (ESP32 platform).
 
+
 ---
 
 ## 📡 Bands & Modes
 - **Modes:** AM, **LSB**, **USB**, **FM (WFM)**  
 - **Coverage:** LW/MW/SW (**150 kHz–30 MHz**) and **VHF FM 64–108 MHz**  
+
 
 ---
 
@@ -79,6 +82,7 @@ This page collects what’s observable from the unit in hand plus the manufactur
 - **Connectors:** **SMA‑K (female, inner pin)** antenna, **3.5 mm stereo** headphone jack, **USB‑C** for charging/firmware
 - **Enclosure:** **ABS injection‑molded**
 - **On‑board:** JST battery connector, tactile buttons (BOOT/RESET), piezo/mini speaker
+
 
 ---
 
@@ -97,9 +101,22 @@ repo-root/
    └─ 8.jpg        # battery & speaker detail
 ```
 
+
+---
+
 ## ⚠️ Notes & Tips
 - Use a **standard 5 V USB‑C charger** (no QC/PD fast‑charge).  
 - As with any **Li‑Po** battery, avoid over‑discharge and store at moderate charge if unused for long periods. LiPo batteries (single cell) must be between 3.7V to 3.85V for storage.
+
+
+---
+
+## 📐 Measurements
+
+* **V3S power supply noise measurements** → [Power Supply Noise](./Amnvolt_V3S/Power_Supply_Noise/README.md)  
+  Includes oscilloscope tests on the JFET Source (pin 2), SI4732 VDD_RF (pin10), and power switch output.  
+  Covers both **DC bias voltages** and **AC ripple/noise analysis**, identifying the cleanest supply rail for the Hi-Z input stage.
+
 
 ---
 
