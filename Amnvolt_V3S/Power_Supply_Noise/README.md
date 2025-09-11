@@ -73,6 +73,12 @@ The JFET under test is marked **K31G** in SOT-23 package.
 
 **SI4732 VDD_RF (pin10)**  
 ![SI pin10 ripple](./images/SDS00012.png)
+
+  
+> ℹ️ Note: The screenshots may look counter-intuitive at first glance.  
+> The **JFET Source (pin 2)** shows a more visible ripple pattern (~72 mVpp), while the **SI4732 VDD_RF (pin10)** looks flatter due to stronger local decoupling.  
+> Numerically, however, the SI pin10 rail has significantly lower ripple (~17 mVpp).  
+> This is why the trace of the SI supply appears “quiet” on the scope, while the JFET source reveals more periodic ripple from the backlight PWM.
   
   
 ---
