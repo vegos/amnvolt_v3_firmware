@@ -17,6 +17,7 @@
 * **FM notch filter tests** → [FM_Notch_Filters](./FM_Notch_Filters/)
 * **V3S overview (photos & specs)** → [Amnvolt V3S README](./Amnvolt_V3S/README.md)
 * **V3S power supply noise measurements** → [Power Supply Noise](./Amnvolt_V3S/Power_Supply_Noise/README.md)
+* **V3S power supply noise reduction modification** → [JFET_Power_Supply_Mod](./Amnvolt_V3S/JFET_Power_Supply_Mod/README.md)
 
 ---
 
