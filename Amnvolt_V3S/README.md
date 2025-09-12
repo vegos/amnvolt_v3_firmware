@@ -3,7 +3,7 @@
 Hands‑on photos, specs, and notes for the **MiniATS V3S** portable receiver.  
 This page collects what’s observable from the unit in hand plus the manufacturer’s stated features.
 
-> TL;DR: Latest (Jun‑2025) AMNVOLT Mini with **injection‑molded ABS shell**, **built‑in Hi‑Z** input network, **headphone amplifier**, and an optimized power circuit that **fixes the battery drain issue when powered-off**.
+> TL;DR: Latest (Jun‑2025) AMNVOLT Mini with **injection‑molded ABS shell**, **ESP32-S3-WROOM-1** microcontroller, **built‑in Hi‑Z** input network, **headphone amplifier**, and an optimized power circuit that **fixes the battery drain issue when powered-off**.
 
 
 ---
@@ -73,7 +73,25 @@ This page collects what’s observable from the unit in hand plus the manufactur
 ---
 
 ## 🛠️ Hardware (observed on this unit)
-- **MCU/Module:** *ESP32‑S3-WROOM‑1* (ESPRESSIF)  
+- **MCU/Module:** *ESP32‑S3-WROOM‑1* (ESPRESSIF)
+    - ESP32-S3 series of SoCs embedded, Xtensa® dual-core 32-bit LX7 microprocessor (with single precision FPU), up to 240 MHz
+      • 384 KB ROM
+      • 512 KB SRAM
+      • 16 KB SRAM in RTC
+      • Up to 16 MB PSRAM
+    - Wi-Fi
+      • 802.11b/g/n
+      • Bit rate: 802.11n up to 150 Mbps
+      • A-MPDU and A-MSDU aggregation
+      • 0.4 μs guard interval support
+      • Center frequency range of operating channel: 2412 ~ 2484 MHz
+    - Bluetooth
+      • Bluetooth LE: Bluetooth 5, Bluetooth mesh
+      • Speed: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps
+      • Advertising extensions
+      • Multiple advertisement sets
+      • Channel selection algorithm #2
+      • Internal co-existence mechanism between Wi-Fi and Bluetooth to share the same antenna
 - **RF IC:** Silicon Labs **SI4732** DSP receiver
 - **Audio:** Integrated **headphone amplifier**; internal **speaker (≈1 W class)**  
 - **Display:** **1.9″ IPS**, 170×320
