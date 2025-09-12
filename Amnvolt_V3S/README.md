@@ -73,8 +73,7 @@ This page collects what’s observable from the unit in hand plus the manufactur
 ---
 
 ## 🛠️ Hardware (observed on this unit)
-- **MCU/Module:** *ESP32‑WROOM‑32* (ESPRESSIF)  
-  > Note: Some spec sheets/online sellers say “ESP‑32‑S3”, but the photos clearly show an ESP32‑WROOM‑32 module, at least on this unit.
+- **MCU/Module:** *ESP32‑S3-WROOM‑1* (ESPRESSIF)  
 - **RF IC:** Silicon Labs **SI4732** DSP receiver
 - **Audio:** Integrated **headphone amplifier**; internal **speaker (≈1 W class)**  
 - **Display:** **1.9″ IPS**, 170×320
