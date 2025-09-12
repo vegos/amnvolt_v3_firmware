@@ -73,32 +73,32 @@ This page collects what’s observable from the unit in hand plus the manufactur
 ---
 
 ## 🛠️ Hardware (observed on this unit)
-- **MCU/Module:** *ESP32‑S3-WROOM‑1* (ESPRESSIF)
-    - ESP32-S3 series of SoCs embedded, Xtensa® dual-core 32-bit LX7 microprocessor (with single precision FPU), up to 240 MHz
-      • 384 KB ROM
-      • 512 KB SRAM
-      • 16 KB SRAM in RTC
-      • Up to 16 MB PSRAM
-    - Wi-Fi
-      • 802.11b/g/n
-      • Bit rate: 802.11n up to 150 Mbps
-      • A-MPDU and A-MSDU aggregation
-      • 0.4 μs guard interval support
-      • Center frequency range of operating channel: 2412 ~ 2484 MHz
-    - Bluetooth
-      • Bluetooth LE: Bluetooth 5, Bluetooth mesh
-      • Speed: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps
-      • Advertising extensions
-      • Multiple advertisement sets
-      • Channel selection algorithm #2
-      • Internal co-existence mechanism between Wi-Fi and Bluetooth to share the same antenna
-- **RF IC:** Silicon Labs **SI4732** DSP receiver
-- **Audio:** Integrated **headphone amplifier**; internal **speaker (≈1 W class)**  
-- **Display:** **1.9″ IPS**, 170×320
-- **Battery:** **Li‑Po 3.7 V 800 mAh** (cell marked **603040**, 2.96 Wh)
-- **Connectors:** **SMA‑K (female, inner pin)** antenna, **3.5 mm stereo** headphone jack, **USB‑C** for charging/firmware
-- **Enclosure:** **ABS injection‑molded**
-- **On‑board:** JST battery connector, tactile buttons (BOOT/RESET), piezo/mini speaker
+- **MCU/Module:** *ESP32‑S3-WROOM‑1* (ESPRESSIF)  
+    - ESP32-S3 series of SoCs embedded, Xtensa® dual-core 32-bit LX7 microprocessor (with single precision FPU), up to 240 MHz  
+      • 384 KB ROM  
+      • 512 KB SRAM  
+      • 16 KB SRAM in RTC  
+      • Up to 16 MB PSRAM  
+    - Wi-Fi  
+      • 802.11b/g/n  
+      • Bit rate: 802.11n up to 150 Mbps  
+      • A-MPDU and A-MSDU aggregation  
+      • 0.4 μs guard interval support  
+      • Center frequency range of operating channel: 2412 ~ 2484 MHz  
+    - Bluetooth  
+      • Bluetooth LE: Bluetooth 5, Bluetooth mesh  
+      • Speed: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps  
+      • Advertising extensions  
+      • Multiple advertisement sets  
+      • Channel selection algorithm #2  
+      • Internal co-existence mechanism between Wi-Fi and Bluetooth to share the same antenna  
+- **RF IC:** Silicon Labs **SI4732** DSP receiver  
+- **Audio:** Integrated **headphone amplifier**; internal **speaker (≈1 W class)**    
+- **Display:** **1.9″ IPS**, 170×320  
+- **Battery:** **Li‑Po 3.7 V 800 mAh** (cell marked **603040**, 2.96 Wh)  
+- **Connectors:** **SMA‑K (female, inner pin)** antenna, **3.5 mm stereo** headphone jack, **USB‑C** for charging/firmware  
+- **Enclosure:** **ABS injection‑molded**  
+- **On‑board:** JST battery connector, tactile buttons (BOOT/RESET), piezo/mini speaker  
 
 
 ---
@@ -123,7 +123,7 @@ repo-root/
 
 ## ⚠️ Notes & Tips
 - Use a **standard 5 V USB‑C charger** (no QC/PD fast‑charge).  
-- As with any **Li‑Po** battery, avoid over‑discharge and store at moderate charge if unused for long periods. LiPo batteries (single cell) must be between 3.7V to 3.85V for storage.
+- As with any **Li‑Po** battery, avoid over‑discharge and store at moderate charge if unused for long periods. LiPo batteries (single cell) must be between 3.7V to 3.85V for storage.  
 
 
 ---
@@ -132,19 +132,19 @@ repo-root/
 
 * **V3S power supply noise measurements** → [Power Supply Noise](./Power_Supply_Noise/README.md)  
   Includes oscilloscope tests on the JFET Source (pin 2), SI4732 VDD_RF (pin10), and power switch output.  
-  Covers both **DC bias voltages** and **AC ripple/noise analysis**, identifying the cleanest supply rail for the Hi-Z input stage.
+  Covers both **DC bias voltages** and **AC ripple/noise analysis**, identifying the cleanest supply rail for the Hi-Z input stage.  
 
 
 ---
 
 ## 📐 JFET Noise Reduction Mod
 
-* **V3S power supply noise reduction modification** → [JFET_Power_Supply_Mod](./Amnvolt_V3S/JFET_Power_Supply_Mod/README.md)
-  Based on Peter Neufeld’s modification → [Si4732A MiniRX Modifications](https://peterneufeld.wordpress.com/2025/06/13/si4732a-minirx-modifications/)
-  The JFET (K51G) is now powered from SI4732 Pin 10 through a 22Ω resistor.
-  Added local decoupling capacitors (100nF + 10µF) from the JFET drain (pin 2) to ground.
-  Includes DC voltage drop measurements across the resistor and oscilloscope noise analysis (files ./JFET_Power_Supply_Mod/images/SDS00014.png–21.png).
-  Comparison between old supply rail, SI4732 pin 10, and the new filtered JFET feed.
+* **V3S power supply noise reduction modification** → [JFET_Power_Supply_Mod](./Amnvolt_V3S/JFET_Power_Supply_Mod/README.md)  
+  Based on Peter Neufeld’s modification → [Si4732A MiniRX Modifications](https://peterneufeld.wordpress.com/2025/06/13/si4732a-minirx-modifications/)  
+  The JFET (K51G) is now powered from SI4732 Pin 10 through a 22Ω resistor.  
+  Added local decoupling capacitors (100nF + 10µF) from the JFET drain (pin 2) to ground.  
+  Includes DC voltage drop measurements across the resistor and oscilloscope noise analysis (files ./JFET_Power_Supply_Mod/images/SDS00014.png–21.png).  
+  Comparison between old supply rail, SI4732 pin 10, and the new filtered JFET feed.  
 
 
 ---
