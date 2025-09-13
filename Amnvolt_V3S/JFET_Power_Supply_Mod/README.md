@@ -127,7 +127,8 @@ The JFET (K51G) no longer takes power from the original noisy rail (it's lifted 
 This ensures the Hi-Z input stage receives a cleaner supply.
 
 ![V3S PCB with mod](./images/V3S_PCB.jpg)
-  
+*(The wire connecting ESP32 GPIO11 to pin10 (VOP) of NS4160 (speaker amplifier) is for future use of the hjberndt.de RTTY/CW decoding [firmware](http://www.hjberndt.de/dvb/pocketSI4735DualCoreDecoder.html))*
+
 ---
 
 📂 All oscilloscope screenshots are in `./images` (final setup).  
