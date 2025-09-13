@@ -50,7 +50,7 @@ Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.
 - Noise reduces further with backlight off.  
 - Confirms display PWM as main noise source.  
 
-![Old line screen off](../JFET_Power_Supply_Mod_Old/images/SDS00031.png)  
+![Old line screen off](./images/SDS00031.png)  
 ![New line screen off](./images/SDS00032.png)
 
 ---
