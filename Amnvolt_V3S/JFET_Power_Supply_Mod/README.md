@@ -2,7 +2,7 @@
 
 This document summarizes the investigation of the **AMNVOLT MiniATS V3S** power supply for the JFET (K51G) input stage, comparing the original rail with a new feed from the **SI4732 Pin 10**.
 
-Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.wordpress.com/2025/06/13/si4732a-minirx-modifications/)**.
+Power mod from **[Peter Neufeld’s modifications](https://peterneufeld.wordpress.com/2025/06/13/si4732a-minirx-modifications/)**.
 
 ---
 
