@@ -1,8 +1,8 @@
-# 📻 V3S JFET Power Supply Noise Investigation
+# 📻 Amnvolt V3S JFET Power Supply Noise Investigation and Mod
 
-This document summarizes the investigation of the **AMNVOLT MiniATS V3S** power supply for the JFET (K51G) input stage, comparing the original rail with a new feed from the **SI4732 Pin 10**.
+This document summarizes the investigation of the **AMNVOLT MiniATS V3S** power supply for the JFET (K51G) High-Z stage, comparing the original rail of the PCB with a new feed from the **SI4732 Pin 10**.
 
-Power mod from **[Peter Neufeld’s modifications](https://peterneufeld.wordpress.com/2025/06/13/si4732a-minirx-modifications/)**.
+Mod from **[Peter Neufeld’s modifications](https://peterneufeld.wordpress.com/2025/06/13/si4732a-minirx-modifications/)**.
 
 ---
 
@@ -76,10 +76,10 @@ Power mod from **[Peter Neufeld’s modifications](https://peterneufeld.wordpres
 
 ---
 
-## 🗂 Archived Measurements (with R/C filter)
+## 🗂 Archived (Previous) Measurements (with R/C filter)
 
-Earlier experiments included a **22Ω series resistor** and **local decoupling (100nF + 10µF)**.  
-Older results/tests are archived for reference in [`../JFET_Power_Supply_Mod_Old/`](../JFET_Power_Supply_Mod_Old/).
+Earlier experiments included a **22Ω series resistor** and **local decoupling (100nF + 10µF) to conist a R/C filter**.  
+Older results are archived for reference in [`../JFET_Power_Supply_Mod_Old/`](../JFET_Power_Supply_Mod_Old/).
 
 Example:  
 
