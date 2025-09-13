@@ -79,7 +79,7 @@ Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.
 ## 🗂 Archived Measurements (with R/C filter)
 
 Earlier experiments included a **22Ω series resistor** and **local decoupling (100nF + 10µF)**.  
-Results are archived for reference in [`../JFET_Power_Supply_Mod_Old/images/`](../JFET_Power_Supply_Mod_Old/images/).
+Older results are archived for reference in [`../JFET_Power_Supply_Mod_Old/`](../JFET_Power_Supply_Mod_Old/).
 
 Example:  
 
@@ -93,9 +93,10 @@ Example:
   - **Old rail:** ~18–20 mV RMS  
   - **New rail (direct):** ~3–4 mV RMS  
 - FFT confirms suppression of PWM harmonics from the OLED display.  
-- Even without RC filtering, SI4732 pin 10 provides a **much cleaner supply**.  
+- Even without RC filtering, SI4732 pin 10 provides a **much cleaner supply**.
+- Next step is to **reinstall decoupling** capacitors (100nF & 10μF).
 
 ---
 
 📂 All oscilloscope screenshots are in `./images` (final setup).  
-Archived R/C filter tests are in `../JFET_Power_Supply_Mod_Old/images/`.
+Archived R/C filter tests are in `../JFET_Power_Supply_Mod_Old/`.
