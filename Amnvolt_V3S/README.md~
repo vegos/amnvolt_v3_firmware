@@ -93,38 +93,8 @@ This page collects what’s observable from the unit in hand plus the manufactur
       • Channel selection algorithm #2  
       • Internal co-existence mechanism between Wi-Fi and Bluetooth to share the same antenna  
 - **RF IC:** Silicon Labs **SI4732** DSP receiver  
-    • Worldwide FM band support (64–108 MHz)  
-    • Worldwide AM band support (520–1710 kHz)  
-    • SW band support (2.3–26.1 MHz)  
-    • LW band support (153–279 kHz)  
-    • Excellent real-world performance with integrated AM/FM/SW/LW/RDS  
-    • Integrated VCO  
-    • Advanced AM/FM seek tuning  
-    • Automatic frequency control (AFC)  
-    • Automatic gain control (AGC)  
-    • Digital FM stereo decoder  
-    • Programmable de-emphasis  
-    • Advanced Audio Processing  
-    • Seven selectable AM channel filters  
-    • AM/FM/SW/LW digital tuning  
-    • No manual alignment necessary  
-    • Programmable reference clock  
-    • Adjustable soft mute control  
-    • RDS/RBDS processor  
-    • Digital audio out  
-    • 2-wire and 3-wire control interface  
-    • Integrated LDO regulator  
 - **Audio:** Integrated **headphone amplifier**; internal **speaker (≈1 W class)**    
-    • Class AB/Class D working mode switching function  
-    • Class AB/Class D working mode and low-power shutdown mode are controlled by one-line pulse, saving the main control GPIO  
-    • 5W output power  
-    • 0.1%THD (1W output power, 5V power supply)  
-    • Excellent full-bandwidth EMI suppression capability  
-    • Excellent "power on, power off" noise suppression  
-    • Efficiency up to 90% or more (Class D working mode)  
-    • Working voltage range: 3.0V～5.5V  
-    • Overcurrent protection, overheating protection, undervoltage protection  
-- **Display:** **1.9″ IPS**, 170×320 (ZJY190-1732TBWPG01)  
+- **Display:** **1.9″ IPS**, 170×320  
 - **Battery:** **Li‑Po 3.7 V 800 mAh** (cell marked **603040**, 2.96 Wh)  
 - **Connectors:** **SMA‑K (female, inner pin)** antenna, **3.5 mm stereo** headphone jack, **USB‑C** for charging/firmware  
 - **Enclosure:** **ABS injection‑molded**  
