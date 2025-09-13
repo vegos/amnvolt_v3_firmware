@@ -12,7 +12,7 @@
 ## 🚀 Quick Links
 
 * **Original firmware (V3)** → [original_firmware](./original_firmware/)
-* **Battery drain hardware fix (V3)** → [Hardware Mod for V3 Battery Drain](./Hardware%20Mod%20for%20V3%20Battery%20Drain/)
+* **Battery drain hardware fix (V3)** → [Hardware_Mod_for_V3_Battery_Drain](./Hardware_Mod_for_V3_Battery_Drain/)
 * **V2 vs V3 comparison** → [V2_vs_V3](./V2_vs_V3/)
 * **FM notch filter tests** → [FM_Notch_Filters](./FM_Notch_Filters/)
 * **V3S overview (photos & specs)** → [Amnvolt V3S README](./Amnvolt_V3S/README.md)
