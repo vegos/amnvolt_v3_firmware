@@ -135,7 +135,7 @@ Soldered a jumper wire from the drain pin to a nearby VCC pad that is active onl
 Verified the modification by checking that no current is drawn when the device is turned off.
 Confirmed the device still works fully - receiving signals - after the modification.
 
-More information here: https://github.com/vegos/amnvolt_v3_firmware/tree/main/Hardware%20Mod%20for%20V3%20Battery%20Drain
+More information here: https://github.com/vegos/amnvolt_v3_firmware/tree/main/Hardware_Mod_for_V3_Battery_Drain
 
 Notes
 
