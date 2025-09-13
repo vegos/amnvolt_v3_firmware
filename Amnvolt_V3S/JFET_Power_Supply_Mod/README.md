@@ -10,15 +10,15 @@ Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.
 
 - Original design powered the **JFET** from a noisy rail influenced by the OLED backlight PWM.  
 - Initial trials included a **22 Ω series resistor** and **local decoupling (100 nF + 10 µF)**.  
-- Final configuration shown here uses **direct feed only (no resistor, no capacitors)**.  
-- Comparisons were made with the **screen ON** and **screen OFF**.
+- Final configuration shown here uses **direct feed only (no resistor, no capacitors, as Peter suggests)**.  
+- Comparisons were made with the **Screen ON** and **Screen OFF**.
 
 ---
 
 ## 📐 DC Bias
 
-- **SI pin 10:** 3.3207 V  
-- With 22 Ω in series (initial test): **3.2194 V** at JFET side → ~101 mV drop (≈4.6 mA current).  
+- **SI4732 Pin 10:** 3.3207 V  
+- With 22Ω in series (initial test): **3.2194 V** at JFET side → ~101 mV drop (≈4.6 mA current).  
 
 *(The series resistor was later removed for final tests.)*
 
@@ -48,7 +48,7 @@ Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.
 
 ### Screen OFF
 - Noise reduces further with backlight off.  
-- Confirms display PWM as main noise source.  
+- Confirms display PWM as an additional noise source.  
 
 ![Old line screen off](./images/SDS00031.png)  
 ![New line screen off](./images/SDS00032.png)
@@ -79,11 +79,33 @@ Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.
 ## 🗂 Archived Measurements (with R/C filter)
 
 Earlier experiments included a **22Ω series resistor** and **local decoupling (100nF + 10µF)**.  
-Older results are archived for reference in [`../JFET_Power_Supply_Mod_Old/`](../JFET_Power_Supply_Mod_Old/).
+Older results/tests are archived for reference in [`../JFET_Power_Supply_Mod_Old/`](../JFET_Power_Supply_Mod_Old/).
 
 Example:  
 
 ![With 22 Ω + caps](../JFET_Power_Supply_Mod_Old/images//SDS00015.png)
+
+---
+
+### 📋 Comparative Results
+
+| Case                     | RMS Noise (mV) | Peak-to-Peak (mV) | Notes                          |
+|---------------------------|----------------|-------------------|--------------------------------|
+| Old rail, Screen ON       | 18–20          | 70–80             | Strong PWM artifacts visible   |
+| New rail (Pin10), Screen ON | 3–4            | 16–30             | Much quieter baseline          |
+| Old rail, Screen OFF      | ~15–16         | ~60–70            | PWM source removed             |
+| New rail (Pin10), Screen OFF | ~2–3          | 12–20             | Flattest trace, lowest noise   |
+
+---
+
+### 📈 FFT Comparison (0–200 kHz, Hanning)
+
+| Case                           | 20 kHz peak (dBV) | 40 kHz (2nd) (dBV) | Noise floor @ 50–100 kHz (dBV) | Notes |
+|--------------------------------|-------------------:|-------------------:|-------------------------------:|------|
+| Old rail, Screen ON            | ≈ –80 to –85      | ≈ –88 to –95       | ≈ –105 to –110                 | PWM fundamentals + richer harmonics |
+| New rail (Pin10), Screen ON    | ≈ –90 to –100     | ≈ –100 to –110     | ≈ –110 to –120                 | Lower peaks; smoother LF spectrum   |
+| Old rail, Screen OFF           | ≈ –95 to –100     | ≈ –105 to –112     | ≈ –108 to –115                 | PWM source removed; residual LF only |
+| New rail (Pin10), Screen OFF   | ≈ –100 to –110    | ≈ –110 to –120     | ≈ –115 to –125                 | Flattest spectrum; lowest floor     |
 
 ---
 
@@ -94,8 +116,18 @@ Example:
   - **New rail (direct):** ~3–4 mV RMS  
 - FFT confirms suppression of PWM harmonics from the OLED display.  
 - Even without RC filtering, SI4732 pin 10 provides a **much cleaner supply**.
-- Next step is to **reinstall decoupling** capacitors (100nF & 10μF).
+- Next step is to **reinstall RC filter** (22Ω registor and decoupling capacitors 100nF & 10μF).  
+  
+---
 
+## 🔍 PCB View of the Mod
+
+The following picture shows the **Amnvolt V3S PCB** with the applied modification.  
+The JFET (K51G) no longer takes power from the original noisy rail (it's lifted up), but is instead connected directly to **SI4732 Pin 10** .  
+This ensures the Hi-Z input stage receives a cleaner supply.
+
+![V3S PCB with mod](./images/V3S_PCB.jpg)
+  
 ---
 
 📂 All oscilloscope screenshots are in `./images` (final setup).  
