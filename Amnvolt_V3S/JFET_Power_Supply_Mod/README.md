@@ -33,7 +33,7 @@ Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.
 - Pk–Pk ≈ **70–80 mV**  
 - Strong periodic disturbances (PWM-related).  
 
-![Old line](./images_old/SDS00014.png)
+![Old line](../Amnvolt_V3S_Old/images/SDS00014.png)
 
 ---
 
@@ -50,7 +50,7 @@ Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.
 - Noise reduces further with backlight off.  
 - Confirms display PWM as main noise source.  
 
-![Old line screen off](./images/SDS00031.png)  
+![Old line screen off](../Amnvolt_V3S_Old/images/SDS00031.png)  
 ![New line screen off](./images/SDS00032.png)
 
 ---
@@ -79,11 +79,11 @@ Inspired by ideas from **[Peter Neufeld’s modifications](https://peterneufeld.
 ## 🗂 Archived Measurements (with R/C filter)
 
 Earlier experiments included a **22Ω series resistor** and **local decoupling (100nF + 10µF)**.  
-Results are archived for reference in [`./images_old`](./images_old).
+Results are archived for reference in [`../Amnvolt_V3S_Old/images/`](../Amnvolt_V3S_Old/images/).
 
 Example:  
 
-![With 22 Ω + caps](./images_old/SDS00015.png)
+![With 22 Ω + caps](../Amnvolt_V3S_Old/images//SDS00015.png)
 
 ---
 
@@ -98,4 +98,4 @@ Example:
 ---
 
 📂 All oscilloscope screenshots are in `./images` (final setup).  
-Archived R/C filter tests are in `./images_old`.
+Archived R/C filter tests are in `../Amnvolt_V3S_Old/images/`.
