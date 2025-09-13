@@ -66,14 +66,14 @@ This page collects what’s observable from the unit in hand plus the manufactur
 ---
 
 ## 📡 Bands & Modes
-- **Modes:** AM, **LSB**, **USB**, **FM (WFM)**  
+- **Modes:** **AM**, **LSB**, **USB**, **FM** (WFM)  
 - **Coverage:** LW/MW/SW (**150 kHz–30 MHz**) and **VHF FM 64–108 MHz**  
 
 
 ---
 
 ## 🛠️ Hardware (observed on this unit)
-- **MCU/Module:** *ESP32‑S3-WROOM‑1* (ESPRESSIF)  
+- **MCU/Module:** **ESP32‑S3-WROOM‑1** (ESPRESSIF)  
     - ESP32-S3 series of SoCs embedded, Xtensa® dual-core 32-bit LX7 microprocessor (with single precision FPU), up to 240 MHz  
       • 384 KB ROM  
       • 512 KB SRAM  
@@ -115,15 +115,24 @@ This page collects what’s observable from the unit in hand plus the manufactur
     • 2-wire and 3-wire control interface  
     • Integrated LDO regulator  
 - **Audio:** Integrated **headphone amplifier**; internal **speaker (≈1 W class)**    
-    • Class AB/Class D working mode switching function  
-    • Class AB/Class D working mode and low-power shutdown mode are controlled by one-line pulse, saving the main control GPIO  
-    • 5W output power  
-    • 0.1%THD (1W output power, 5V power supply)  
-    • Excellent full-bandwidth EMI suppression capability  
-    • Excellent "power on, power off" noise suppression  
-    • Efficiency up to 90% or more (Class D working mode)  
-    • Working voltage range: 3.0V～5.5V  
-    • Overcurrent protection, overheating protection, undervoltage protection  
+    - NS4160 Speaker Amplifier
+      • Class AB/Class D working mode switching function  
+      • Class AB/Class D working mode and low-power shutdown mode are controlled by one-line pulse, saving the main control GPIO  
+      • 5W output power  
+      • 0.1%THD (1W output power, 5V power supply)  
+      • Excellent full-bandwidth EMI suppression capability  
+      • Excellent "power on, power off" noise suppression  
+      • Efficiency up to 90% or more (Class D working mode)  
+      • Working voltage range: 3.0V～5.5V  
+      • Overcurrent protection, overheating protection, undervoltage protection  
+    - Texas Instruments LM4809 Headphone Amplifier
+      • Dual 105mW Headphone Amplifier 
+      • Active-Low Shutdown Mode of delivering 105mW per channel of continuous
+      • "Click and Pop" Reduction Circuitry average power into a 16Ω load with 0.1% (THD+N)
+      • Low Shutdown Current
+      • THD+N at 1kHz at 105mW Continuous Average Power into 16Ω 0.1% (typ)
+      • THD+N at 1kHz at 70mW Continuous Average Power into 32Ω 0.1% (typ)
+      • Shutdown Current 0.4μA (typ)
 - **Display:** **1.9″ IPS**, 170×320 (ZJY190-1732TBWPG01)  
 - **Battery:** **Li‑Po 3.7 V 800 mAh** (cell marked **603040**, 2.96 Wh)  
 - **Connectors:** **SMA‑K (female, inner pin)** antenna, **3.5 mm stereo** headphone jack, **USB‑C** for charging/firmware  
