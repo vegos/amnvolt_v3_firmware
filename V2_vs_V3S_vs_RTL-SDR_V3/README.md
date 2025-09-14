@@ -73,6 +73,6 @@ RTL-SDR v3 captured the strongest peak (+17 dB), with V2 and V3S slightly lower.
 - On RTL-SDR v3 the receving was done with SDR# and direct sampling mode. The Mini ATS V2 and V3S were feed via headphones output to a Steinberg UR22C.  
   WSJT-X was used to decode FT8 signals.  
   The bandwidth was 3200Hz on RTL-SDR v3, 3000Hz on MiniATS V2 & V3S.  
-- On both MiniATS I had the screen off/AGC 0. Volume around to ~40, gain on the soundcard tuned to match the same input (about 45-50 dB on WSJT-X).
-- Raw log files are place [**here**](./logs/).
+- On both MiniATS I had the screen off/AGC 0. Volume around to ~ 40-45, gain on the soundcard tuned to match the same input (about 45 dB on WSJT-X) for every receiver.
+- Raw log files are placed [**here**](./logs/).
 
