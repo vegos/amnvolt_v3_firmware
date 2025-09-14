@@ -186,5 +186,12 @@ repo-root/
 
 ---
 
+## 🔬Receiving Tests/Differences Between MiniATS V3S, MiniATS V2 and RTL-SDR V3
+
+- I test the same day, with the same antenna (Moonraker X1-HF), same cathode (RG58) and a FM notch filter the three receivers.
+  Results are [**here**](..//V2_vs_V3S_vs_RTL-SDR_V3/).
+
+---
+
 ## License
 Unless stated otherwise, text and photos © the original author(s). If you reuse content, please provide attribution.
