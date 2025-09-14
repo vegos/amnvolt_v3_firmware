@@ -1,4 +1,7 @@
-# FT8 Receiver Comparison (Moonraker X1-HF @ 7.074 MHz)
+# FT8 Reception Comparison (Moonraker X1-HF @ 7.074 MHz)  
+Receivers used: RTL-SDR V3, MiniATS V2, MiniATS V3S  
+
+---
 
 ## 1. Decodes Over Time
 ![Decodes per 5min](images/snrper5min.png)
