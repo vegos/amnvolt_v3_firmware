@@ -23,12 +23,13 @@
 
 ## 🧭 What’s Inside
 
-This repo collects useful material for Mini ATS class receivers:
+This repo collects useful material for Mini ATS class receivers:  
 
-* Factory firmware backups.
-* Documented hardware fixes.
-* V2 vs V3 audio/SNR comparisons.
+* Factory firmware backups.  
+* Documented hardware fixes/mods (for V3 and V3S).  
+* V2 vs V3 audio/SNR comparisons.  
 * RF measurements (filters & setups).
+* Datasheets and specifications/features of V3S parts (it may be the same to previous version).
 
 ---
 
@@ -40,5 +41,5 @@ Corrections, test data and docs for other Mini ATS (SI4732) clones are welcome.
 
 ## 📜 License
 
-* Firmware dumps: archival/educational use only.
-* Docs & measurements: shared for troubleshooting and improvement of Mini ATS radios.
+* Firmware dumps: archival/educational use only.  
+* Docs & measurements: shared for troubleshooting and improvement of Mini ATS radios.  

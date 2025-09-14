@@ -178,12 +178,10 @@ repo-root/
 
 ## 📐 JFET Noise Reduction Mod
 
-* **V3S power supply noise reduction modification** → [JFET_Power_Supply_Mod](./Amnvolt_V3S/JFET_Power_Supply_Mod/README.md)  
+* **V3S power supply noise reduction modification** → [JFET_Power_Supply_Mod](./JFET_Power_Supply_Mod/README.md)  
   Based on Peter Neufeld’s modification → [Si4732A MiniRX Modifications](https://peterneufeld.wordpress.com/2025/06/13/si4732a-minirx-modifications/)  
-  The JFET (K51G) is now powered from SI4732 Pin 10 through a 22Ω resistor.  
-  Added local decoupling capacitors (100nF + 10µF) from the JFET drain (pin 2) to ground.  
-  Includes DC voltage drop measurements across the resistor and oscilloscope noise analysis (files ./JFET_Power_Supply_Mod/images/SDS00014.png–21.png).  
-  Comparison between old supply rail, SI4732 pin 10, and the new filtered JFET feed.  
+  The JFET (K51G) is now powered from SI4732 Pin 10.  
+  Includes DC voltage drop measurements, Oscilloscope comparition etc from the PCB supply and from the SI4732 pin 10 etc.  
 
 
 ---
