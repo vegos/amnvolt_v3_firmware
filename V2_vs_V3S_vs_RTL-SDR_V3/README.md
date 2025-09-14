@@ -74,5 +74,5 @@ RTL-SDR v3 captured the strongest peak (+17 dB), with V2 and V3S slightly lower.
   WSJT-X was used to decode FT8 signals.  
   The bandwidth was 3200Hz on RTL-SDR v3, 3000Hz on MiniATS V2 & V3S.  
 - On both MiniATS I had the screen off/AGC 0. Volume around to ~ 40-45, gain on the soundcard tuned to match the same input (about 45 dB on WSJT-X) for every receiver.
-- Raw log files are placed [**here**](./logs/).
+- Raw log files are stored [**here**](./logs/).
 
