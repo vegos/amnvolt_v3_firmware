@@ -2,6 +2,7 @@
 
 ## 1. Decodes Over Time
 ![Decodes per 5min](images/snrper5min.png)
+* The time division is 5 minutes. I average the 5 minute period decodes SNR. Tests are performed same date, just changing the receivers.
 
 ---
 
@@ -66,5 +67,12 @@ RTL-SDR v3 captured the strongest peak (+17 dB), with V2 and V3S slightly lower.
 
 ---
 
-## 7. Note
-- **MiniATS V3S** is optimized for used with high impedance antennas, not 50Ω.
+## 7. Notes
+- **MiniATS V3S** is optimized for used with high impedance antennas, not 50Ω.  
+- MiniATS V3S is **modded**, take a look [**here**](../Amnvolt_V3S/JFET_Power_Supply_Mod/).  
+- On RTL-SDR v3 the receving was done with SDR# and direct sampling mode. The Mini ATS V2 and V3S were feed via headphones output to a Steinberg UR22C.  
+  WSJT-X was used to decode FT8 signals.  
+  The bandwidth was 3200Hz on RTL-SDR v3, 3000Hz on MiniATS V2 & V3S.  
+- On both MiniATS I had the screen off/AGC 0. Volume around to ~40, gain on the soundcard tuned to match the same input (about 45-50 dB on WSJT-X).
+- Raw log files are place [**here**](./logs/).
+
