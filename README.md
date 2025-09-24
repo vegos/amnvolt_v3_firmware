@@ -19,7 +19,7 @@
 * **V3S power supply noise measurements** → [Power Supply Noise](./Amnvolt_V3S/Power_Supply_Noise/README.md)
 * **V3S power supply noise reduction modification** → [JFET_Power_Supply_Mod](./Amnvolt_V3S/JFET_Power_Supply_Mod/README.md)
 * **RTL-SDR V3 vs MiniATS V2 vs MiniATS V3S comparison** → [V2_vs_V3S_vs_RTL-SDR_V3](./V2_vs_V3S_vs_RTL-SDR_V3/)
-* **FT8 Receiving with RTLSDR, MiniATS V2/V3S, Tecsun PL-660** → [FT8_Receiving](./FT8_Receiving/)
+* **FT8 Receiving with RTLSDR V3, MiniATS V2/V3S, Tecsun PL-660** → [FT8_Receiving](./FT8_Receiving/)
 
 ---
 
@@ -30,7 +30,7 @@ This repo collects useful material for Mini ATS class receivers:
 * Factory firmware backups.  
 * Documented hardware fixes/mods (for V3 and V3S).  
 * V2 vs V3 audio/SNR comparisons.
-* RTL-SDR vs V2 vs V3 receiving FT8 comparition.
+* RTL-SDR V3 vs MiniATS V2/V3/V3S vs Tecsun PL-660 receiving FT8 comparition.
 * RF measurements (filters & setups).
 * Datasheets and specifications/features of V3S parts (it may be the same to previous version).
 
