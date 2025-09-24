@@ -81,11 +81,9 @@ All receivers were placed in the same shack position, using identical feedline a
 
 ---
 
-# Receiver Comparison on 10m FT8 (28.074 MHz) 
+## Additional Receiver Comparison on 10m FT8 (28.074 MHz): Tecsun PL-660 vs MiniATS V2
 
-## Comparison on 10m FT8 (28.074 MHz): Tecsun PL-660 vs MiniATS V2
-
-This experiment compared two different receivers connected to the same antenna system:
+This test compared two different receivers connected to the same antenna system:
 - **Tecsun PL-660** (audio → sound card → WSJT-X)  
 - **MiniATS V2** (audio → sound card → WSJT-X)
 
@@ -195,5 +193,5 @@ For shack use and digital mode decoding, the RTL-SDR v3 is clearly the first cho
 For field use, voice reception and ease of use, the Tecsun PL-660 stands out: reliable, user-friendly, with a large display, dedicated buttons, and strong, high-quality audio.  
   
 For portability, the MiniATS series shines. Despite its small size, it does not lack features - on the contrary, with existing firmwares it can even decode RTTY/CW natively.  
-It offers good battery autonomy with a built-in lithium cell, headphone output (V1 is missing heaphone amplifier that is present to next versions), and in V3/V3S models, a High-Z antenna input.  
+It offers good battery autonomy with a built-in lithium cell, headphone output (V1 is missing headphone amplifier that is present to next versions), and in V3/V3S models, a High-Z antenna input.  
 The MiniATS is a tiny yet capable receiver with a color display, ideal for lightweight portable operation.  
