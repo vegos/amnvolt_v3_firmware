@@ -163,6 +163,41 @@ This transformer can also be used in **reverse mode**:
 
 ---
 
+## 📈 Receiver Input Characterization (No Transformer)
+
+Measured directly using NanoVNA Port 1 (S11).  
+No matching transformer was used — these values represent the native input impedance of each MiniATS receiver.
+
+| Receiver | Freq (MHz) | Parallel R | Input Z (approx.) | Notes |
+|-----------|-------------|-------------|------------------|--------|
+| **MiniATS V1** | 6.88 | 8.9 kΩ | ≈ 9 kΩ | Early design, medium-high Z |
+| **MiniATS V2** | 6.88 | 18.1 kΩ | ≈ 18 kΩ | Improved front-end coupling |
+| **MiniATS V3** | 6.88 | 774 kΩ | ≈ 770 kΩ | Very high Z input |
+| **MiniATS V3S** | 6.88 | 775 kΩ | ≈ 770 kΩ | Matches V3 behavior |
+
+**Setup:**  
+NanoVNA Port 1 → Receiver input (antenna port)  
+No transformer.  
+
+**Observation:**  
+These measurements confirm the impedance evolution between MiniATS generations.  
+The **9:1 Unun** provides proper matching for the **V3/V3S** (~50 → 450 Ω), while older versions (V1/V2) would require higher ratios (e.g. 1:144).
+
+---
+
+## 📊 Measurement Summary
+
+Below are the NanoVNA measurements taken for comparison between the raw antenna, the transformer (Unun 9:1) connected to the antenna, and the transformer with a 50 Ω dummy load.
+
+| Test | Description | Connection | Observations |
+|------|--------------|-------------|---------------|
+| **Antenna** | Direct measurement of the antenna’s impedance | NanoVNA Port 1 → Antenna | High impedance (~8–9 kΩ @ 6.88 MHz). |
+| **Transformer** | Measurement with Unun 9:1 connected between antenna (50 Ω side) and NanoVNA (450 Ω side) | NanoVNA Port 1 → 450 Ω side → Unun 9:1 → Antenna (50 Ω) | Noticeable improvement in match — return loss improves to around −6 to −10 dB in HF band, confirming proper transformation. |
+| **Transformer + 50 Ω Load** | Measurement of the Unun itself with a 50 Ω dummy load instead of an antenna | NanoVNA Port 1 → 450 Ω side → Unun 9:1 → Dummy Load 50 Ω | Clean response with return loss near −8 dB and low insertion loss (≈ 0.8 dB), showing efficient 9:1 transformation. |
+
+These measurements demonstrate that the Unun 9:1 provides a solid impedance transformation across the HF range (1–30 MHz), improving the receiver match while maintaining low losses.
+
+---
+
 ## 🛠 Author Notes
 Built by Antonis Maglaras. Tests with NanoVNA-H4 (v4.3, running firmware v.1.2.44) for verification of 50 Ω ↔ 450 Ω matching.  
-Significantly improves SNR of MiniATS V3S across HF.
