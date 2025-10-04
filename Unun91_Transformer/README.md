@@ -199,5 +199,21 @@ These measurements demonstrate that the Unun 9:1 provides a solid impedance tran
 
 ---
 
+## Real-world Test
+
+To confirm the transformer's impact, a quick field test was performed using the **MiniATS V3 (modified / "cannibalized" version)** receiver on a random shortwave frequency (7265 kHz).  
+The same antenna setup was used in both cases — first *without* the transformer, and then *with* it inserted between the antenna and the receiver.
+
+The improvement was clear: with the transformer connected, the received signal strength increased notably, and noise was reduced.  
+The receiver showed an S-meter rise of several dB.
+
+| Without Transformer | With Transformer |
+|----------------------|------------------|
+| ![Without Transformer](./images/10.%20WithoutTransformer.jpg) | ![With Transformer](./images/11.%20WithTransformer.jpg) |
+
+*(Receiver shown: MiniATS V3 Cannibalized — see [`../MiniATSv3Cannibalized`](../MiniATSv3Cannibalized) for details.)*
+
+---
+
 ## 🛠 Author Notes
 Built by Antonis Maglaras. Tests with NanoVNA-H4 (v4.3, running firmware v.1.2.44) for verification of 50 Ω ↔ 450 Ω matching.  
