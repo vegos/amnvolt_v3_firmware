@@ -186,9 +186,20 @@ repo-root/
 
 ---
 
+## 📐 Photos Of The Modifications So Far
+
+- JFET power supply close-up, 7-turn inductor and diode.  
+  ![JFET, Inductor, Diode](./images/R1000302.jpg)  
+  
+- Connection from speaker amplifier to GPIO11 for RTTY/CW decoding (also a filter is included, using a 1.5kΩ resistor and a 100nF capacitor).  
+  ![Modification for RTTY/CW Decoding](./images/R1000312.jpg)  
+
+
+---
+
 ## 🔬Receiving Tests/Differences Between MiniATS V3S, MiniATS V2 and RTL-SDR V3
 
-- I test the same day, with the same antenna (Moonraker X1-HF), same cathode (RG58) and a FM notch filter the three receivers.
+- I test the same day, with the same antenna (Moonraker X1-HF), same coax (RG58) and a FM notch filter the three versions of MiniATS receivers.
   Results are [**here**](..//V2_vs_V3S_vs_RTL-SDR_V3/).
 
 ---
